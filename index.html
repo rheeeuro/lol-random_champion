@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="btnContainer">
+    <button class="top">TOP</button>
+    <button class="jungle">JUNGLE</button>
+    <button class="mid">MID</button>
+    <button class="bottom">BOTTOM</button>
+    <button class="support">SUPPORT</button>
+  </div>
+  <h1 class="result"></h1>
+</body>
+<script>
+  (function () {
+    const top = document.querySelector(".top");
+    const jungle = document.querySelector(".jungle");
+    const mid = document.querySelector(".mid");
+    const bottom = document.querySelector(".bottom");
+    const support = document.querySelector(".support");
+
+    const select = (line) => {
+      if (line === "top") {
+        const champ = [
+          "아트록스",
+          "말파이트",
+          "퀸",
+          "레넥톤",
+          "다리우스",
+          "가렌",
+          "일라오이",
+          "카밀",
+          "트린다미어",
+          "세트",
+          "피오라",
+          "판테온",
+          "케일",
+          "뽀삐",
+          "나서스",
+          "올라프",
+          "클레드",
+          "리븐",
+          "잭스",
+          "요네",
+          "오른",
+          "신지드",
+          "이렐리아",
+          "사이온",
+          "모데카이저",
+          "갱플랭크",
+          "우르곳",
+          "문도 박사",
+          "그웬",
+          "아크샨",
+          "볼리베어",
+          "제이스",
+          "초가스",
+          "티모",
+          "나르",
+          "베인",
+          "워윅",
+          "렝가",
+          "마오카이",
+          "쉔",
+          "럼블",
+          "제드",
+          "나피리",
+          "자크",
+          "케넨",
+          "카시오페아",
+          "요릭",
+          "사일러스",
+          "야스오",
+          "우디르",
+          "탐 켄치",
+          "크산테",
+          "스웨인",
+          "아칼리",
+          "오공",
+          "블라디미르",
+          "트런들",
+          "르블랑",
+          "하이머딩거",
+          "그라가스",
+          "브라이어",];
+        document.querySelector(".result").innerHTML = champ[Math.floor(Math.random() * champ.length)];
+        
+      } else if (line === "jungle") {
+        const champ = [
+        "렉사이",
+        "녹턴",
+        "자르반 4세",
+        "카직스",
+        "이블린",
+        "피들스틱",
+        "에코",
+        "샤코",
+        "벨베스",
+        "릴리아",
+        "그레이브즈",
+        "니달리",
+        "브라이어",
+        "케인",
+        "자크",
+        "리 신",
+        "다이애나",
+        "비에고",
+        "마스터 이",
+        "우디르",
+        "아이번",
+        "사일러스",
+        "람머스",
+        "엘리스",
+        "카서스",
+        "탈리야",
+        "워윅",
+        "바이",
+        "헤카림",
+        "뽀삐",
+        "누누와 윌럼프",
+        "아무무",
+        "신 짜오",
+        "마오카이",
+        "렝가",
+        "그라가스",
+        "스카너",
+        "트런들",
+        "킨드레드",
+        "쉬바나",
+        "볼리베어",
+        "탈론",
+        "세주아니",
+        "그웬",
+        "오공",
+        "나피리",
+        ];
+        document.querySelector(".result").innerHTML = champ[Math.floor(Math.random() * champ.length)];
+      } else if (line === "mid") {
+        const champ = [
+        "사일러스",
+        "아크샨",
+        "벡스",
+        "오리아나",
+        "제드",
+        "제라스",
+        "럭스",
+        "탈론",
+        "피즈",
+        "아리",
+        "아칼리",
+        "나피리",
+        "판테온",
+        "니코",
+        "카시오페아",
+        "카타리나",
+        "탈리야",
+        "애니비아",
+        "스웨인",
+        "아우렐리온 솔",
+        "리산드라",
+        "트린다미어",
+        "요네",
+        "카사딘",
+        "럼블",
+        "레넥톤",
+        "신드라",
+        "말자하",
+        "에코",
+        "야스오",
+        "다이애나",
+        "트위스티드 페이트",
+        "가렌",
+        "블라디미르",
+        "말파이트",
+        "키아나",
+        "트리스타나",
+        "빅토르",
+        "이렐리아",
+        "조이",
+        "베이가",
+        "르블랑",
+        "케넨",
+        "애니",
+        "아지르",
+        "제이스",
+        "갱플랭크",
+        "갈리오",
+        "라이즈",
+        "초가스",
+        "브랜드",
+        "그라가스",
+        "벨코즈",
+        "직스",
+        "케일",
+        "코르키",
+        ];
+        document.querySelector(".result").innerHTML = champ[Math.floor(Math.random() * champ.length)];
+      } else if (line === "bottom") {
+        const champ = [
+        "애쉬",
+        "베인",
+        "이즈리얼",
+        "스웨인",
+        "카이사",
+        "세라핀",
+        "진",
+        "닐라",
+        "시비르",
+        "케이틀린",
+        "미스 포츈",
+        "카서스",
+        "트위치",
+        "사미라",
+        "자야",
+        "루시안",
+        "직스",
+        "야스오",
+        "코그모",
+        "트리스타나",
+        "드레이븐",
+        "제리",
+        "베이가",
+        "칼리스타",
+        "징크스",
+        "바루스",
+        "아펠리오스",
+        ]
+        document.querySelector(".result").innerHTML = champ[Math.floor(Math.random() * champ.length)];
+      } else if (line === "support") {
+        const champ = [
+        "블리츠크랭크",
+        "세나",
+        "라칸",
+        "쓰레쉬",
+        "소라카",
+        "자이라",
+        "바드",
+        "잔나",
+        "노틸러스",
+        "제라스",
+        "알리스타",
+        "파이크",
+        "럭스",
+        "소나",
+        "렐",
+        "타릭",
+        "레오나",
+        "나미",
+        "카르마",
+        "질리언",
+        "마오카이",
+        "룰루",
+        "브라움",
+        "니코",
+        "레나타 글라스크",
+        "모르가나",
+        "브랜드",
+        "하이머딩거",
+        "스웨인",
+        "벨코즈",
+        "샤코",
+        "피들스틱",
+        "뽀삐",
+        "세라핀",
+        "자크",
+        "밀리오",
+        "아무무",
+        "유미",
+        "판테온",
+        "트위치",
+        ];
+        document.querySelector(".result").innerHTML = champ[Math.floor(Math.random() * champ.length)];
+      }
+    }
+
+    top.addEventListener("click", () => {select("top")});
+    jungle.addEventListener("click", () => {select("jungle")});
+    mid.addEventListener("click", () => {select("mid")});
+    bottom.addEventListener("click", () => {select("bottom")});
+    support.addEventListener("click", () => {select("support")});
+  })();
+</script>
+</html>
